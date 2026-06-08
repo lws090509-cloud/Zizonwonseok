@@ -1,169 +1,323 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <title>항공우주공학과 진로 탐색</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body{
-            font-family: Arial, sans-serif;
-            margin:0;
-            background-color:#f4f6f9;
-        }
+<title>항공우주공학 진로 탐색</title>
 
-        header{
-            background-color:#0b3d91;
-            color:white;
-            text-align:center;
-            padding:30px;
-        }
+<style>
 
-        nav{
-            background-color:#1d5fd0;
-            padding:15px;
-            text-align:center;
-        }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'맑은 고딕',sans-serif;
+}
 
-        nav a{
-            color:white;
-            text-decoration:none;
-            margin:15px;
-            font-weight:bold;
-        }
+body{
+    background:#0a0f1f;
+    color:white;
+    line-height:1.8;
+}
 
-        section{
-            background:white;
-            margin:20px;
-            padding:20px;
-            border-radius:10px;
-            box-shadow:0 0 5px rgba(0,0,0,0.1);
-        }
+header{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:
+    linear-gradient(rgba(0,0,0,0.5),
+    rgba(0,0,0,0.7)),
+    url('https://images.unsplash.com/photo-1446776709462-d6b525c57bd3');
+    background-size:cover;
+}
 
-        h2{
-            color:#0b3d91;
-        }
+header h1{
+    font-size:4rem;
+}
 
-        table{
-            width:100%;
-            border-collapse:collapse;
-        }
+header p{
+    font-size:1.4rem;
+}
 
-        table, th, td{
-            border:1px solid gray;
-        }
+nav{
+    position:sticky;
+    top:0;
+    background:#111827;
+    padding:15px;
+    text-align:center;
+    z-index:100;
+}
 
-        th{
-            background-color:#dbe7ff;
-        }
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-weight:bold;
+}
 
-        th, td{
-            padding:10px;
-            text-align:center;
-        }
+nav a:hover{
+    color:#4da6ff;
+}
 
-        footer{
-            background-color:#0b3d91;
-            color:white;
-            text-align:center;
-            padding:15px;
-        }
-    </style>
+section{
+    padding:80px 10%;
+}
 
+h2{
+    color:#4da6ff;
+    margin-bottom:20px;
+    font-size:2rem;
+}
+
+.card{
+    background:#161f36;
+    padding:25px;
+    border-radius:15px;
+    margin-top:20px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+table,th,td{
+    border:1px solid white;
+}
+
+th{
+    background:#1f3a68;
+}
+
+th,td{
+    padding:12px;
+    text-align:center;
+}
+
+.job{
+    background:#161f36;
+    padding:20px;
+    margin:15px 0;
+    border-radius:15px;
+}
+
+footer{
+    text-align:center;
+    padding:40px;
+    background:#111827;
+}
+
+</style>
 </head>
+
 <body>
 
 <header>
-    <h1>항공우주공학과 진로 탐색</h1>
-    <p>교과 내용과 연계한 항공우주공학 진로 소개</p>
+
+<h1>🚀 Aerospace Engineering</h1>
+
+<p>
+교과와 연결된 항공우주공학 진로 탐색 웹사이트
+</p>
+
 </header>
 
 <nav>
-    <a href="#intro">학과 소개</a>
-    <a href="#subject">교과 연계</a>
-    <a href="#skill">필요 역량</a>
-    <a href="#future">진로 전망</a>
+<a href="#intro">학과소개</a>
+<a href="#subject">교과연계</a>
+<a href="#roadmap">진학로드맵</a>
+<a href="#career">관련직업</a>
+<a href="#future">미래전망</a>
+<a href="#dream">나의꿈</a>
 </nav>
 
 <section id="intro">
-    <h2>1. 항공우주공학과란?</h2>
-    <p>
-        항공우주공학은 비행기, 드론, 인공위성, 로켓, 우주선 등을
-        설계하고 개발하는 학문이다.
-        물리학, 수학, 정보기술을 활용하여 하늘과 우주를 탐구한다.
-    </p>
+
+<h2>항공우주공학과란?</h2>
+
+<div class="card">
+
+<p>
+항공우주공학은 비행기, 드론, 인공위성, 로켓,
+우주선 등을 설계하고 개발하는 공학 분야이다.
+</p>
+
+<p>
+공기역학, 추진공학, 구조역학, 제어공학 등을
+바탕으로 하늘과 우주를 탐구한다.
+</p>
+
+<p>
+최근에는 우주 관광, 재사용 로켓,
+인공위성 산업 등이 성장하면서
+미래 핵심 산업으로 주목받고 있다.
+</p>
+
+</div>
+
 </section>
 
 <section id="subject">
-    <h2>2. 교과 내용과 진로 연계</h2>
 
-    <table>
-        <tr>
-            <th>교과</th>
-            <th>배운 내용</th>
-            <th>항공우주공학과의 연계</th>
-        </tr>
+<h2>교과 내용과의 연계</h2>
 
-        <tr>
-            <td>수학</td>
-            <td>함수, 미분, 적분</td>
-            <td>로켓 궤도 계산, 비행 경로 설계</td>
-        </tr>
+<table>
 
-        <tr>
-            <td>물리학</td>
-            <td>운동 법칙, 힘, 에너지</td>
-            <td>항공기 비행 원리와 추진 시스템 이해</td>
-        </tr>
+<tr>
+<th>교과</th>
+<th>배운 내용</th>
+<th>항공우주공학 활용</th>
+</tr>
 
-        <tr>
-            <td>화학</td>
-            <td>연소 반응, 물질의 성질</td>
-            <td>로켓 연료 개발 및 추진제 연구</td>
-        </tr>
+<tr>
+<td>수학</td>
+<td>함수, 미분, 적분</td>
+<td>비행 궤도 계산</td>
+</tr>
 
-        <tr>
-            <td>정보</td>
-            <td>프로그래밍, 알고리즘</td>
-            <td>인공위성 제어 및 자율비행 시스템 개발</td>
-        </tr>
+<tr>
+<td>물리학</td>
+<td>운동 법칙, 에너지</td>
+<td>비행 원리 분석</td>
+</tr>
 
-        <tr>
-            <td>영어</td>
-            <td>과학 기술 문서 읽기</td>
-            <td>NASA 및 국제 연구 자료 활용</td>
-        </tr>
+<tr>
+<td>화학</td>
+<td>연소 반응</td>
+<td>로켓 연료 개발</td>
+</tr>
 
-    </table>
+<tr>
+<td>정보</td>
+<td>프로그래밍</td>
+<td>위성 제어 시스템</td>
+</tr>
+
+<tr>
+<td>영어</td>
+<td>논문 독해</td>
+<td>국제 연구 협력</td>
+</tr>
+
+</table>
+
 </section>
 
-<section id="skill">
-    <h2>3. 필요한 역량</h2>
+<section id="roadmap">
 
-    <ul>
-        <li>수학적 사고력</li>
-        <li>물리 개념 이해 능력</li>
-        <li>문제 해결 능력</li>
-        <li>프로그래밍 능력</li>
-        <li>창의적 설계 능력</li>
-        <li>협업 및 의사소통 능력</li>
-    </ul>
+<h2>고등학생 진학 로드맵</h2>
+
+<div class="card">
+
+<h3>1학년</h3>
+<p>
+수학과 과학 기초 실력 다지기
+</p>
+
+<h3>2학년</h3>
+<p>
+물리학, 화학, 미적분 집중 학습
+</p>
+
+<h3>3학년</h3>
+<p>
+우주항공 관련 탐구활동 및 진로 프로젝트 수행
+</p>
+
+<h3>대학교</h3>
+<p>
+항공우주공학과 진학 후
+공기역학, 추진공학, 인공위성 설계 학습
+</p>
+
+</div>
+
+</section>
+
+<section id="career">
+
+<h2>관련 직업</h2>
+
+<div class="job">
+<h3>✈ 항공기 설계 엔지니어</h3>
+<p>항공기의 구조와 성능을 설계한다.</p>
+</div>
+
+<div class="job">
+<h3>🚀 로켓 연구원</h3>
+<p>발사체와 추진 시스템을 개발한다.</p>
+</div>
+
+<div class="job">
+<h3>🛰 인공위성 개발자</h3>
+<p>위성 설계와 운용 기술을 연구한다.</p>
+</div>
+
+<div class="job">
+<h3>🤖 드론 개발자</h3>
+<p>무인 비행 시스템을 연구한다.</p>
+</div>
+
 </section>
 
 <section id="future">
-    <h2>4. 미래 진로</h2>
 
-    <ul>
-        <li>항공기 설계 엔지니어</li>
-        <li>우주항공 연구원</li>
-        <li>인공위성 개발자</li>
-        <li>로켓 추진 연구원</li>
-        <li>드론 시스템 개발자</li>
-        <li>우주 탐사 프로젝트 연구원</li>
-    </ul>
+<h2>미래 전망</h2>
+
+<div class="card">
+
+<ul>
+
+<li>우주 관광 산업 성장</li>
+
+<li>화성 탐사 프로젝트 확대</li>
+
+<li>재사용 로켓 기술 발전</li>
+
+<li>도심항공교통(UAM) 상용화</li>
+
+<li>인공지능 기반 항공 시스템 개발</li>
+
+<li>민간 우주기업 증가</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<section id="dream">
+
+<h2>나의 꿈</h2>
+
+<div class="card">
+
+<p>
+나는 항공우주공학자가 되어
+인공위성과 우주 탐사 기술 개발에 기여하고 싶다.
+</p>
+
+<p>
+학교에서 배우는 수학, 물리학, 화학, 정보 과목을
+성실히 학습하여 미래 우주 산업을 이끄는
+엔지니어가 되는 것이 목표이다.
+</p>
+
+</div>
+
 </section>
 
 <footer>
-    <p>2026 진로 탐색 프로젝트 | 항공우주공학과</p>
+
+<h3>2026 진로 탐색 프로젝트</h3>
+
+<p>항공우주공학과를 향한 나의 도전</p>
+
 </footer>
 
 </body>
